@@ -1,0 +1,48 @@
+.navContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
+    
+    .navMenu{
+        display: grid;
+        background-color:rgba(27, 63, 29, 0.692);
+        grid-column-start: 1; 
+        grid-column-end: 6; 
+        
+        .logo {
+            width: 100%;
+            font-size: 28px; 
+            font-weight: bold;
+            grid-column-end: 2; 
+            color: white;
+        }
+
+        .cartIcon {
+            display: grid;
+            grid-column-start: 6; 
+            justify-content: center;
+
+            span {
+                width: 100%;
+            }
+
+            span:hover {
+                background-color:rgba(15, 29, 16, 0.692); 
+            }  
+
+        }
+
+        span { 
+            text-align: center;
+            width: 20%;
+            padding: 8px 0;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 20px; 
+                font-weight: bold;
+            }
+        }
+    }
+}
