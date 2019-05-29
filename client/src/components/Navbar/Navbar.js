@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <div className = 'navContainer'>
       <div className = 'navMenu'>
-        <span className = 'logo'>Eleven Speed</span> 
+        <span ><Link to = '/' className = 'logo'>Eleven Speed</Link></span>
         <Dropdown/>
         <div className= 'cartIcon'>
           <span><Link to= '/Chart'><FaShoppingCart/>Cart</Link></span>

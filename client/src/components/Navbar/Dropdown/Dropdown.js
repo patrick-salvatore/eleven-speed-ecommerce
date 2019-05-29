@@ -18,7 +18,7 @@ class Dropdown extends Component {
     toggleMenu = () => {
         this.setState({
             isOpen: !this.state.isOpen
-        }, _ => console.log(this.state))
+        })
     }
 
     handleClickOutside = e => {
@@ -30,7 +30,7 @@ class Dropdown extends Component {
     };
 
     componentDidMount() {
-        document.addEventListener("mousedown", this.handleClickOutside);
+      document.addEventListener("mousedown", this.handleClickOutside);
     }
     componentWillUnmount() {
       document.removeEventListener("mousedown", this.handleClickOutside);
@@ -44,10 +44,10 @@ class Dropdown extends Component {
                 </button>
                 {this.state.isOpen && (
                     <div className="dropdown">
-                    <ul>
-                        <Link to = '/bikes'><li>Bikes</li></Link>
-                        <Link to = '/about'><li>About</li></Link>
-                    </ul>
+                        <ul>
+                            <Link to = '/bikes'><li>Bikes</li></Link>
+                            <Link to = '/about'><li>About</li></Link>
+                        </ul>
                     </div>
                 )}
             </div>
