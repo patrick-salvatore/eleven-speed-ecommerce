@@ -21,7 +21,7 @@ class Dropdown extends Component {
         })
     }
 
-    handleClickOutside = e => {
+    handleHoverOutside = e => {
         if (this.container.current && !this.container.current.contains(e.target)) {
           this.setState({
             isOpen: false,
@@ -30,16 +30,16 @@ class Dropdown extends Component {
     };
 
     componentDidMount() {
-      document.addEventListener("mousedown", this.handleClickOutside);
+      document.addEventListener("mouseover", this.handleHoverOutside);
     }
     componentWillUnmount() {
-      document.removeEventListener("mousedown", this.handleClickOutside);
+      document.removeEventListener("mouseover", this.handleHoverOutside);
     }
 
     render() {
         return (
             <div className="container" ref = {this.container}>
-                <button type="button" className="button" onClick={this.toggleMenu}>
+                <button type="button" className="button" onMouseOver={this.toggleMenu}>
                     ☰
                 </button>
                 {this.state.isOpen && (
@@ -47,6 +47,7 @@ class Dropdown extends Component {
                         <ul>
                             <Link to = '/bikes'><li>Bikes</li></Link>
                             <Link to = '/about'><li>About</li></Link>
+                            <Link to = '/contact'><li>Contact</li></Link>
                         </ul>
                     </div>
                 )}
