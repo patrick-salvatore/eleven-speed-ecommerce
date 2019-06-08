@@ -4,15 +4,15 @@ import React, { Component } from 'react'
 import './Home.scss'
 
 // components
-import Hero from './Content/Hero'
-import PopularProducts from './Content/PopularProducts'
+import Hero from './Content/Hero/Hero'
+import PopularProducts from './Content/Products/PopularProducts'
 
 class Home extends Component {
   render() {
     return (
       <div className = 'homePage'>
        <Hero/>
-       <PopularProducts/> 
+       <PopularProducts/>
       </div>
     )
   }

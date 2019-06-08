@@ -1,0 +1,68 @@
+ {
+     "products": [
+         {
+            "id": "1",
+            "brand": "Giant", 
+            "name":"TCR Advanced Disc", 
+            "type": "road", 
+            "price":"$2,550",
+            "size": "54"
+         },
+         {
+            "id": "2",
+            "brand": "Giant", 
+            "name":"Defy Advanced Pro", 
+            "type": "road", 
+            "price":"$7,500",
+            "size": "56"
+         },
+         {
+            "id": "3",
+            "brand": "Specialized", 
+            "name":"S-Works Venge Pro", 
+            "type": "road", 
+            "price":"$11,000",
+            "size": "54"
+         },
+         {
+            "id": "4",
+            "brand": "Scott", 
+            "name":"Addict RC 20", 
+            "type": "road", 
+            "price":"$8,000",
+            "size": "58"
+         }, {
+            "id": "5",
+            "brand": "Canyon", 
+            "name":"Endurace CF SLX Disc", 
+            "type": "road", 
+            "price":"$7,500",
+            "size": "52"
+         },
+         {
+            "id": "6",
+            "brand": "Specialized", 
+            "name":"S-Works Tarmac Disc", 
+            "type": "road", 
+            "price":"$11,000",
+            "size": "54"
+         },
+         {
+            "id": "7",
+            "brand": "Specialized", 
+            "name":"Allex Sprint Comp Disc", 
+            "type": "road", 
+            "price":"$2,200",
+            "size": "56"
+         },
+         {
+            "id": "8",
+            "brand": "Trek", 
+            "name":"Madone", 
+            "type": "road", 
+            "price":"$12,300",
+            "size": "58"
+         }
+     ]
+     
+ }

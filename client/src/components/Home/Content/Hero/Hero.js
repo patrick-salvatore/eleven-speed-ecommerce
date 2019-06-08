@@ -1,6 +1,7 @@
 import React from 'react'
-import '../Home.scss'
 
+// styling
+import './hero.scss'
 
 const Hero = () => {
     return (
