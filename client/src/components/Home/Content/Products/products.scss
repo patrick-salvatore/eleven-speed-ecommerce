@@ -1,4 +1,8 @@
 .product-section {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 
     .product-header {
         display: grid;
@@ -26,27 +30,75 @@
         width: 100%;
         padding-right: 15px;
         padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
 
         .product-card {
             display: grid;
+            grid-template-rows: auto auto;
             border-radius: 1%;
-            background-color: rgba(46, 155, 51, 0.445);
-            padding: 9px 10px;
-            margin-bottom: 15px;
-            height: 340px;
-            width: 270px;
-            justify-self: center;
+            margin: 15px 25px;
+            height: 280px;
+            width: 290px;
 
-            img {
-                height: 100%;
-                width: 100%;
+            .image {
+                position: relative;
+
+                img {
+                    height: 190px;
+                    width: 100%;
+                    z-index: -10;
+                }
+
+                .button-actions {
+                    display: grid;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                    justify-items: center;
+                    align-items: center;
+                    opacity: 0;
+
+                    button {
+                        cursor: pointer;
+                        width: 150px;
+                        background-color: transparent;
+                        border: 1px solid black;
+                        margin: 9px 0;
+                        padding: 10px 15px;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+
+                    button:first-child {
+                        background-color: rgb(255, 255, 255);
+                    }
+
+                    button:last-of-type {
+                        border: 1.5px solid rgb(255, 255, 255);
+                        color: white;
+                    }
+
+                    button:focus {
+                        outline: none;
+                    }
+
+                    button:hover {
+                        background-color: black; 
+                        color: white; 
+                    }
+                }
+
+                .button-actions:hover {
+                    background-color: rgba(155, 235, 148, 0.7);
+                    opacity: 1;
+                }
             }
 
-            .content { 
+            .content {
                 display: grid;
                 grid-template-columns: auto auto;
+                align-items: start;
 
                 h4, p {
                     margin: 0;
@@ -55,15 +107,18 @@
 
                 .content-right {
                     justify-self: end;
-                    color: rgb(0, 32, 119);
-                }
-            }
 
-            @media (min-width: 1200px) {
-                .product-list {
-                    max-width: 1200px;
+                    h4 {
+                        color: rgb(0, 32, 119);
+                    }
                 }
             }
         }
+    }
+}
+
+@media (min-width: 1200px) {
+    .product-list {
+        max-width: 1200px;
     }
 }

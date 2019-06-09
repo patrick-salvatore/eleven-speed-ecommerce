@@ -9,7 +9,7 @@ import './products.scss'
 const PopularProducts = () => {
     return (
         <div className = 'product-section'>
-            <div className = 'product-header'>
+            <div className = 'product-header' id = "bikes">
                 <h1 >Popular products</h1>
                 <h3>All of our most popular bikes found below</h3>
             </div>

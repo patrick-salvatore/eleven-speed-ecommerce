@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-
-// react router 
-import {Link} from 'react-router-dom'
+import { Link, animateScroll as scroll} from "react-scroll";
 
 // styling 
 import './Dropdown.scss'
@@ -45,7 +43,7 @@ class Dropdown extends Component {
                 {this.state.isOpen && (
                     <div className="dropdown">
                         <ul>
-                            <Link to = '/bikes'><li>Bikes</li></Link>
+                            <Link activeClass="active" to="bikes" spy={true} smooth={true} offset={0} duration={1100}><li>Bikes</li></Link>
                             <Link to = '/about'><li>About</li></Link>
                             <Link to = '/contact'><li>Contact</li></Link>
                         </ul>
