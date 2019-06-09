@@ -1,0 +1,70 @@
+.form-container {
+    width: 100%;
+
+    .form_newsletter {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        background-color: rgb(125, 209, 137);
+        padding: 30px;
+
+        .newsletter {
+            display: grid;
+            position: relative;
+            grid-template: "label input" auto "label checkbox" auto "label gdpr";
+            grid-column-gap: 15px;
+
+            .newsletter_label {
+                align-self: center;
+                grid-area: label;
+                font-size: 20px;
+                padding: 0 7px;
+            }
+
+            .newletter-form_input {
+                grid-area: input;
+                position: relative;
+                border-bottom: 1px solid black;
+
+                .newsletter-form_email {
+                    display: block;
+                    color: white;
+                    width: 100%;
+                    border: 0;
+                    background: transparent;
+                    font-size: 1.2rem;
+                }
+
+                .newsletter-form_email:focus {
+                    outline: none;
+                }
+
+                .newsletter-form_button {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background-color: transparent;
+                    border: 0;
+
+                    svg {
+                        transform: rotate(-90deg)
+                    }
+                }
+            }
+            
+            .newsletter-form_label {
+                grid-area: gdpr;
+            }
+
+        }
+    }
+
+    .form-image {
+        width: 100%; 
+        
+        img {
+            width:100%;
+            height: 400px;
+        }
+    }
+}

@@ -7,7 +7,6 @@ import data from '../../../../db.json'
 import './products.scss'
 
 const BikesList = () => {
-    console.log(data.products)
     return (
         <div className = 'product-list'>
             {data.products.map((bike, i) => (

@@ -6,6 +6,10 @@ import './Home.scss'
 // components
 import Hero from './Content/Hero/Hero'
 import PopularProducts from './Content/Products/PopularProducts'
+import NewLetter from './Content/NewsLetter/NewsLetter'
+import Button from './Button/Button';
+import ServicesList from './Content/ServicesList/ServicesList'
+
 
 class Home extends Component {
   render() {
@@ -13,6 +17,9 @@ class Home extends Component {
       <div className = 'homePage'>
        <Hero/>
        <PopularProducts/>
+       <NewLetter/>
+       <ServicesList/>
+       <Button/>      
       </div>
     )
   }
