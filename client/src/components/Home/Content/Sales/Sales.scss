@@ -26,13 +26,12 @@
             width: 400px;
             padding: 33px 14px;
             background-color: rgb(230, 241, 253);
-            
+
             img {
                 width: 100%;
             }
 
             .sales-content {
-                // margin: 20px 4px;
                 width: 100%;
                 display: grid;
                 grid-template-columns: auto auto;
@@ -46,7 +45,7 @@
                     font-size: 1.3em;
                     grid-area: name;
                 }
-                
+
                 h3 {
                     margin: 0;
                     font-size: 1.8em;
@@ -80,8 +79,33 @@
                 font-weight: bold;
                 color: rgb(34, 105, 20);
             }
+
             button:focus {
-                outline:none;
+                outline: none;
+            }
+
+            @media (max-width: 850px) {
+                width: 70%;
+
+                img {
+                    width: 100%;
+                }
+
+                * {
+                    font-size: 80%
+                }
+
+                .sales-content {
+                    display: grid;
+                    grid-template-rows: repeat(3, auto);
+                    grid-template-columns: 1fr;
+                    justify-self: center;
+
+                    .content-right {
+                        grid-row: 3;
+                        justify-self: center;
+                    }
+                }
             }
         }
     }
@@ -110,53 +134,10 @@
                 grid-row: 2;
             }
         }
-    
+
         img {
             width: 100%;
         }
-
-        // .button-actions {
-        //     border:solid black 1px;
-        //     display: grid;
-        //     position: absolute;
-        //     left: 0;
-        //     top: 0;
-        //     height: 100%;
-        //     width: 100%;
-        //     justify-items: center;
-        //     align-items: center;
-        //     opacity: 0;
-    
-        //     button {
-        //         cursor: pointer;
-        //         width: 150px;
-        //         background-color: transparent;
-        //         border: 1px solid black;
-        //         margin: 9px 0;
-        //         padding: 10px 15px;
-        //         font-size: 16px;
-        //         font-weight: bold;
-        //     }
-    
-        //     button:first-child {
-        //         background-color: rgb(255, 255, 255);
-        //     }
-    
-        //     button:last-of-type {
-        //         border: 1.5px solid rgb(255, 255, 255);
-        //         color: white;
-        //     }
-    
-        //     button:focus {
-        //         outline: none;
-        //     }
-    
-        //     button:hover {
-        //         background-color: black; 
-        //         color: white; 
-        //     }
-        // }
-        
     }
-}
 
+}
