@@ -7,9 +7,10 @@ import data from '../../../../db.json'
 import './products.scss'
 
 const BikesList = () => {
+    const Bikes = data.products
     return (
         <div className = 'product-list'>
-            {data.products.map((bike, i) => (
+            {Bikes.map((bike, i) => (
                 <div className = 'product-card' key = {bike.id}>
                     <div className = 'image'>
                         <img src = {require(`../../../../assets/products/product-${bike.id}.jpg`)} alt = {bike.title}/>

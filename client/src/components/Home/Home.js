@@ -6,9 +6,10 @@ import './Home.scss'
 // components
 import Hero from './Content/Hero/Hero'
 import PopularProducts from './Content/Products/PopularProducts'
-import NewLetter from './Content/NewsLetter/NewsLetter'
+import NewsLetter from './Content/NewsLetter/NewsLetter'
 import Button from './Button/Button';
 import ServicesList from './Content/ServicesList/ServicesList'
+import Sales from './Content/Sales/Sales'
 
 
 class Home extends Component {
@@ -17,8 +18,9 @@ class Home extends Component {
       <div className = 'homePage'>
        <Hero/>
        <PopularProducts/>
-       <NewLetter/>
+       <NewsLetter/>
        <ServicesList/>
+       <Sales/>
        <Button/>      
       </div>
     )

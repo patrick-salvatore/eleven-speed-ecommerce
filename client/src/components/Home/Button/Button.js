@@ -33,7 +33,7 @@ const Button = () => {
 const styles = {
     button: {
         display: 'none',
-        padding: '20px 25px',
+        padding: '10px 15px',
         borderRadius: '50%',
         position: 'fixed',
         bottom: '20px', 
