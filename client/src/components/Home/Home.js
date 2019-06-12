@@ -5,23 +5,18 @@ import './Home.scss'
 
 // components
 import Hero from './Content/Hero/Hero'
-import PopularProducts from './Content/Products/PopularProducts'
-import NewsLetter from './Content/NewsLetter/NewsLetter'
+import Content from './Content/Content'
 import Button from './Button/Button';
-import ServicesList from './Content/ServicesList/ServicesList'
-import Sales from './Content/Sales/Sales'
-
+import Footer from './Content/Footer/Footer';
 
 class Home extends Component {
   render() {
     return (
       <div className = 'homePage'>
        <Hero/>
-       <PopularProducts/>
-       <NewsLetter/>
-       <ServicesList/>
-       <Sales/>
-       <Button/>      
+       <Content/>
+       <Button/>
+       <Footer/>
       </div>
     )
   }
