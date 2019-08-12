@@ -1,189 +1,185 @@
 .sales-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    position: relative;
-    height: 10%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	position: relative;
+	height: 10%;
 
-    .exclusive-sale {
-        display: grid;
-        grid-template-rows: auto 1fr;
+	.exclusive-sale {
+		display: grid;
+		grid-template-rows: auto 1fr;
 
-        .sales-header {
-            position: relative;
-            justify-self: center;
+		.sales-header {
+			position: relative;
+			justify-self: center;
 
-            h1,
-            h3 {
-                padding: 7px 1px;
-                margin: 0;
-            }
-        }
+			h1,
+			h3 {
+				padding: 7px 1px;
+				margin: 0;
+			}
+		}
 
-        .image-container {
-            display: grid;
-            justify-self: center;
-            justify-items: center;
-            width: 400px;
-            padding: 33px 14px;
-            background-color: rgb(230, 241, 253);
+		.image-container {
+			display: grid;
+			justify-self: center;
+			justify-items: center;
+			width: 400px;
+			padding: 33px 14px;
+			background-color: rgb(230, 241, 253);
 
-            img {
-                width: 100%;
-            }
+			img {
+				width: 100%;
+			}
 
-            .sales-content {
-                width: 100%;
-                display: grid;
-                grid-template-columns: auto auto;
-                grid-template-rows: auto auto;
-                grid-template-areas:
-                    'name name'
-                    'price1 price2';
+			.sales-content {
+				width: 100%;
+				display: grid;
+				grid-template-columns: auto auto;
+				grid-template-rows: auto auto;
+				grid-template-areas:
+					"name name"
+					"price1 price2";
 
-                h2 {
-                    margin: 5px 0;
-                    font-size: 1.3em;
-                    grid-area: name;
-                }
+				h2 {
+					margin: 5px 0;
+					font-size: 1.3em;
+					grid-area: name;
+				}
 
-                h3 {
-                    margin: 0;
-                    font-size: 1.8em;
-                }
+				h3 {
+					margin: 0;
+					font-size: 1.8em;
+				}
 
-                .content-left {
-                    grid-area: price1;
-                    justify-self: center;
+				.content-left {
+					grid-area: price1;
+					justify-self: center;
 
-                    h3 {
-                        text-decoration: line-through;
-                    }
-                }
+					h3 {
+						text-decoration: line-through;
+					}
+				}
 
-                .content-right {
-                    grid-area: price2;
-                    justify-self: center;
+				.content-right {
+					grid-area: price2;
+					justify-self: center;
 
-                    .sales-price {
-                        color: #002077;
-                    }
-                }
-            }
+					.sales-price {
+						color: #002077;
+					}
+				}
+			}
 
-            button {
-                margin: 0 auto;
-                font-size: 2em;
-                cursor: pointer;
-                background-color: transparent;
-                border: 0;
-                font-weight: bold;
-                color: rgb(34, 105, 20);
-            }
+			button {
+				margin: 0 auto;
+				font-size: 2em;
+				cursor: pointer;
+				background-color: transparent;
+				border: 0;
+				font-weight: bold;
+				color: rgb(34, 105, 20);
+			}
 
-            button:focus {
-                outline: none;
-            }
+			button:focus {
+				outline: none;
+			}
 
-            @media (max-width: 850px) {
-                width: 70%;
-                height: 500px;
+			@media (max-width: 850px) {
+				width: 70%;
+				height: 500px;
 
-                img {
-                    width: 100%;
-                }
+				img {
+					width: 100%;
+				}
 
-                * {
-                    font-size: 80%
-                }
+				* {
+					font-size: 80%;
+				}
 
-                .sales-content {
-                    display: grid;
-                    grid-template-rows: repeat(3, auto);
-                    grid-template-columns: 1fr;
-                    justify-self: center;
+				.sales-content {
+					display: grid;
+					grid-template-rows: repeat(3, auto);
+					grid-template-columns: 1fr;
+					justify-self: center;
 
-                    .content-right {
-                        grid-row: 3;
-                        justify-self: center;
-                    }
-                }
-            }
-        }
-    }
+					.content-right {
+						grid-row: 3;
+						justify-self: center;
+					}
+				}
+			}
+		}
+	}
 
-    .sales-items {
-        display: grid;
-        position: relative;
-        grid-template-rows: auto auto;
+	.sales-items {
+		display: grid;
+		position: relative;
+		grid-template-rows: auto auto;
 
-        .sales-items-list {
-            display: grid;
-            width: 100%;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
+		.sales-items-list {
+			display: grid;
+			width: 100%;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
 
-            #prod-1 {
-                grid-column: 2;
-            }
+			#prod-1 {
+				grid-column: 2;
+			}
 
-            #prod-2 {
-                grid-column: 1;
-                grid-row: 2;
-            }
+			#prod-2 {
+				grid-column: 1;
+				grid-row: 2;
+			}
 
-            #prod-3 {
-                grid-column: 3;
-                grid-row: 2;
-            }
+			#prod-3 {
+				grid-column: 3;
+				grid-row: 2;
+			}
 
-            h3 {
-                color: #002077;
-                font-size: 1.4em;
-            }
+			h3 {
+				color: #002077;
+				font-size: 1.4em;
+			}
 
-            @media (max-width: 1000px) {
-                display: grid;
-                grid-template-columns: auto;
-                grid-template-rows: 1fr 1fr 1fr;
-                width: 100%;
+			@media (max-width: 1000px) {
+				display: grid;
+				grid-template-columns: auto;
+				grid-template-rows: repeat(1fr, 3);
+				width: 100%;
 
-                #prod-1 {
-                    grid-column: 1;
-                    grid-row: 1;
-                }
+				#prod-1 {
+					grid-column: 1;
+					grid-row: 1;
+				}
 
-                #prod-2 {
-                    grid-column: 1;
-                    grid-row: 2;
-                }
+				#prod-2 {
+					grid-column: 1;
+					grid-row: 2;
+				}
 
-                #prod-3 {
-                    grid-column: 1;
-                    grid-row: 3;
-                }
+				#prod-3 {
+					grid-column: 1;
+					grid-row: 3;
+				}
 
-                img {
-                    width: 100px;
-                    height: 100px;
-                }
-                
-                h3 {
-                    color: #002077;
-                    font-size: 1.4em;
-                }
-                h2 {
-                    font-size: 1em;
-                }
+				img {
+					width: 100px;
+					height: 100px;
+				}
 
-            }
-        }
+				h3 {
+					color: #002077;
+					font-size: 1.4em;
+				}
+				h2 {
+					font-size: 1em;
+				}
+			}
+		}
 
-        img {
-            width: 200px;
-            height: 200px;
-        }
-
-
-    }
-
+		img {
+			width: 200px;
+			height: 200px;
+		}
+	}
 }
